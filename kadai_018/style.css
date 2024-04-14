@@ -1,0 +1,106 @@
+#top {
+  /* 横幅を800pxにします。 */
+  width: 800px;
+  /* 背景色を「 #dcc9f4」にします。 */
+  background-color: #dcc9f4;
+  /* 上下に20pxの余白を入れて、画面の中央に配置します。 */
+  margin: 20px auto;
+  /* 中にあるp要素が中央揃えになるようにします。 */
+  text-align: center;
+}
+.top-child {
+  /* 横幅を親要素の20%になるようにします。 */
+  width: 20%;
+  /* 背景色を「#ffd9df」にします。 */
+  background-color: #ffd9df;
+  /* 3つのp要素が横並びになるようにします。 */
+  display: inline-block;
+}
+#middle {
+  /* 横幅を800pxにします。 */
+  width: 800px;
+  /* 高さを800pxにします。 */
+  height: 800px;
+  /* 上下に20pxの余白を入れて、画面の中央に配置します（id名topのdiv要素とmarginの相殺が起こりますが、一番上の図形と一番下の図形との上下間隔が20pxになるようにすればOKです）。 */
+  margin: 20px auto;
+  /* 背景色を「#ffd9df 」にします。 */
+  background-color: #ffd9df;
+  /* 親要素のdiv要素（id名「middle」）の上から*px、左から*px距離を取った場所に配置してください。 */
+  position: relative;
+}
+#middle-child01 {
+  /* 横幅を200pxにします。 */
+  width: 200px;
+  /* 高さを200pxにします。 */
+  height: 200px;
+  /* 背景色を「#87ceeb」にします。 */
+  background-color: #87ceeb;
+  /* 親要素のdiv要素（id名「middle」）の上から100px、左から100px距離を取った場所に配置してください。 */
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+#middle-child02 {
+  /* 横幅を200pxにします。 */
+  width: 200px;
+  /* 高さを200pxにします。 */
+  height: 200px;
+  /* 背景色を「#87ceeb」にします。 */
+  background-color: #87ceeb;
+  /* 親要素のdiv要素（id名「middle」）の上から300px、左から300px距離を取った場所に配置してください。 */
+  position: absolute;
+  top: 300px;
+  left: 300px;
+}
+#middle-child03 {
+  /* 横幅を200pxにします。 */
+  width: 200px;
+  /* 高さを200pxにします。 */
+  height: 200px;
+  /* 背景色を「#87ceeb」にします。 */
+  background-color: #87ceeb;
+  /* 親要素のdiv要素（id名「middle」）の上から500px、左から500px距離を取った場所に配置してください。 */
+  position: absolute;
+  top: 500px;
+  left: 500px;
+}
+#bottom {
+  /* 横幅を800pxにします。 */
+  width: 800px;
+  /* 高さを300pxにします。 */
+  height: 300px;
+  /* 画面の中央に配置します。 */
+  margin: 0 auto;
+  /* 背景色を「#87ceeb」にします。 */
+  background-color: #87ceeb;
+}
+#bottom-child01 {
+	/* 横幅を400pxにします。 */
+	width: 400px;
+  /* 高さを100pxにします。 */
+	height: 100px;
+  /* 背景色を「#e5dcf0」にします。 */
+  background-color: #e5dcf0;
+}
+#bottom-child02 {
+	/* 横幅を400pxにします。 */
+	width: 400px;
+  /* 高さを100pxにします。 */
+	height: 100px;
+  /* 背景色を「#e5dcf0」にします。 */
+  background-color: #e5dcf0;
+	/* 本来の表示場所の左から200pxずらして配置してください。 */
+  position: relative;
+  left: 200px;
+}
+#bottom-child03 {
+	/* 横幅を400pxにします。 */
+	width: 400px;
+  /* 高さを100pxにします。 */
+	height: 100px;
+  /* 背景色を「#e5dcf0」にします。 */
+  background-color: #e5dcf0;
+	/* 本来の表示場所の左から400pxずらして配置してください。 */
+  position: relative;
+  left: 400px;
+}
