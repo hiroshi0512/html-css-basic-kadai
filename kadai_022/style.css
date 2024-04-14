@@ -1,0 +1,95 @@
+h1 {
+  margin: 0px;
+}
+p {
+  margin: 0px;
+}
+body {
+  margin: 0px;
+}
+header {
+  /* 下の余白を20pxにします。 */
+  /* ※要素内とあるので，paddingが正しいが，paddingだと完成形と異なる． */
+  margin-bottom: 20px;
+  /* 背景色を「 rgb(244, 79, 79)」にします。 */
+  background-color: rgb(244, 79, 79);
+  /* 中の要素が中央揃えになるようにします。 */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+h1 {
+  /* 文字色をrgb(255, 255, 255)にします。 */
+  color: rgb(255, 255, 255);
+}
+main {
+  /* main要素内の余白を上下左右とも10pxにします。 */
+  padding: 10px;
+}
+#parent {
+  /* displayプロパティを使い、id名parentの要素をFlexコンテナにします。 */
+  display: flex;
+  /* justify-contentプロパティでFlexboxコンテナの子要素（Flexアイテム）「一番左と一番右のアイテムも含め、均等な間隔で配置する」値を設定します。 */
+  justify-content: space-between;
+}
+.contents {
+  /* 線（太さ3px、実線、色rgb(238, 204, 204)）で要素を囲います。 */
+  border: solid 3px rgb(238, 204, 204);
+  /* 幅は親要素の25%にします。プロパティはwidthではなく、flex-basisを使ってください。 */
+  flex-basis: 25%;
+  /* 要素内の余白は上下10px、左右15pxにします。 */
+  padding: 10px 15px;
+  /* 要素外の余白は上下20px、左右0にします。 */
+  margin: 20px 0px;
+  /* 中の要素が中央揃えになるようにします。 */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+h2 {
+ /* h2要素のフォントサイズを25pxにし、下線（太さ3px、点線、色rgb(236, 122, 122)）を引きます。 */
+ font-size: 25px;
+ border-bottom: dotted 3px rgb(236, 122, 122);
+}
+ /* h2要素の前に「●」記号を表示します。色はrgb(239, 111, 139)とします。 */
+ h2::before {
+  content: "●";
+  color: rgb(239, 111, 139);
+}
+.contents p:nth-of-type(2)::first-letter {
+  font-weight: bold;
+  color: rgb(97, 206, 249);
+}
+.contents img {
+  margin: 10px 0;
+  width: 70%;
+}
+footer {
+  background-color: rgb(244, 79, 79);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+a {
+  color: rgb(255, 255, 255);
+}
+a:visited {
+  color: rgb(193, 234, 251);
+}
+a:hover {
+  color: rgb(245, 178, 168);
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width:768px) {
+  h2 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 25px;
+  }
+  #parent {
+    display: flex;
+    flex-direction: column;
+  }
+}
